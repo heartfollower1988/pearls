@@ -1,0 +1,10 @@
+[alias]
+	lg = log --pretty=format:'%C(magenta)%h %C(green)%ai|%<(20,trunc)%ar %C(blue)%<(35)%ae %C(reset)%s'
+	todaylg = log --since=1.day --pretty=format:'%C(magenta)%h %C(green)%ai|%<(20,trunc)%ar %C(blue)%<(35)%ae %C(reset)%s'
+	st = "status"
+	amend = "commit --amend --no-edit"
+[user]
+	email = heartfollower1988@163.com
+	name = heartfollower1988
+[pull]
+	rebase = true
