@@ -10,6 +10,7 @@ fi
 set -o vi
 ulimit -c unlimited
 
+alias vi=vim
 alias svnd="svn st | grep '^[MA]' --color"
 alias mantmux="man M /home/xx/local/share/man/man1/tmux.1"
 alias grep='grep --color'
