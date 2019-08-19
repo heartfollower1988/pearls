@@ -18,7 +18,14 @@ alias find='find . -name'
 alias topcao='top -ucaoguanlong'
 alias tf='tail -f'
 alias mg='grep -rnIi --color'
-mgp () { grep -rnIi --color "$1" "${2:-.}"; }
+
+mgp() 
+{
+    grep -rnIi --color "$1" "${2:-.}";
+}
+
+alias mscp=~/mscp.sh
+alias rep=~/rep.sh
 
 # sandbox
 alias server='cd /export/home/caoguanlong/work/sandbox_server'
@@ -43,3 +50,4 @@ export PS1="\[\e[32m\][#\##\[\e[31m\]\u\[\e[32m\]@\[\e[31m\]\h \[\e[35m\]\w\[\e[
 
 # make vim not overwrite the content in window after vim exits
 export TERM=xterm
+

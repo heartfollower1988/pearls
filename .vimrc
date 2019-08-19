@@ -2,6 +2,7 @@ syntax on
 
 let mapleader=";"
 nmap <silent> <Leader>s :FSHere<cr>
+nmap <C-o> g]
 
 set showcmd             " display incomplete commands
 set laststatus=2

@@ -25,3 +25,5 @@
     tool = vimdiff
 [push]
     default = matching
+[core]
+    whitespace = cr-at-eol
