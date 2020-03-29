@@ -1,5 +1,6 @@
 [alias]
 	lg = log --pretty=format:'%C(magenta)%h %C(green)%ai|%<(20,trunc)%ar %C(blue)%<(35)%ae %C(reset)%s'
+    plog = log --pretty=format:"%C(auto)%h\\ %C(green)%ad\\ %C(blue)%<(14)%an\\ %C(auto)%d\\ %Creset%<(120,trunc)%s" --date=format:"%Y-%m-%d\\ %H:%M:%S"
 	todaylg = log --since=1.day --pretty=format:'%C(magenta)%h %C(green)%ai|%<(20,trunc)%ar %C(blue)%<(35)%ae %C(reset)%s'
     lastlg = log -1 HEAD
 	st = "status"
@@ -27,3 +28,7 @@
     default = matching
 [core]
     whitespace = cr-at-eol
+[merge]
+    tool = vimdiff
+[mergetool]
+    keepBackup = false
